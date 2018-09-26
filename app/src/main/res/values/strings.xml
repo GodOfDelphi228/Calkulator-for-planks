@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="width">ШИРИНА</string>
+    <string name="length">ДЛИНА</string>
+    <string name="area">ПЛОЩАДЬ</string>
+    <string name="prise">ЦЕНА</string>
+    <string name="text_top">ИП Бондарь</string>
+    <string name="text_button">РАССЧИТАТЬ</string>
+    <string name="text_result_count">Кол-во досок:</string>
+    <string name="text_result_price">Итоговая цена:</string>
+    <string name="rub">р.</string>
+    <string name="error">Ошибка ввода данных</string>
+</resources>

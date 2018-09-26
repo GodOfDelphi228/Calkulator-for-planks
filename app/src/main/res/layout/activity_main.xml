@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/image"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_top"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/text_view_1"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/edit_length"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/length"
+            android:textColorHint="#444444"
+            android:maxLength="7"
+            android:background="#80603d96"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:ems="4"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edit_width"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/width"
+            android:textColorHint="#444444"
+            android:maxLength="7"
+            android:background="#80603d96"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:ems="4"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_2"
+        android:layout_below="@id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/length"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_marginLeft="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/width"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_3"
+        android:layout_below="@id/linear_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/edit_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/area"
+            android:textColorHint="#444444"
+            android:maxLength="7"
+            android:background="#80603d96"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:ems="4"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:hint="@string/prise"
+            android:textColorHint="#444444"
+            android:layout_marginLeft="40dp"
+            android:maxLength="7"
+            android:background="#80603d96"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:ems="4"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_4"
+        android:layout_below="@id/linear_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/area"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_marginLeft="115dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/prise"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/linear_layout_4"
+        android:id="@+id/my_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:width="130dp"
+        android:text="@string/text_button"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/my_button"
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/text_result_count"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_1"
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/text_result_price"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="@string/rub"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
